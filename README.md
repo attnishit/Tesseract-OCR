@@ -1,2 +1,0 @@
-# High-Performance-OCR
-OCR
