@@ -43,7 +43,15 @@ voluptua.
 </p>
 
 * **Searching.py** searches for a pattern like serching for dates and prices using regex expression and producing an corresponding boxes around that pattern
+<p>
+    <img src="pic3.png">
+</p>
 
-**Checkout** [this link](https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/) to learn more Tesseract and OCR!!
+## Installation and Running for Demo
+* Install all the Requirements from Requirement.txt file and run **ocr.py** for text recognition
+* Run **bounding_box.py** for drawing bounding box around the text recognized by tesseract
+* Run **Searching.py** for searching and drawing around the required text or expression by chossing suitable Regex
+
+### Checkout [this link](https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/) to learn more Tesseract and OCR!!
 
 
