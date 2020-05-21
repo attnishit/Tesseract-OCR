@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import  preprocessing
 
 # preprocessing the image
-image = cv2.imread('images/alpha.jpeg')
+image = cv2.imread('images/Lorem.jpg')
 gray = preprocessing.get_grayscale(image)
 thresh = preprocessing.thresholding(gray)
 opening = preprocessing.opening(gray)
@@ -23,6 +23,18 @@ columns = 2
 keys = list(images.keys())
 for i in range(rows*columns):
 	ax.append(fig.add_subplot(rows,columns,i+1))
-	ax[-1].set_title('Alpha -' + keys[i])
+	ax[-1].set_title('Lorem -' + keys[i])
 	plt.imshow(images[keys[i]],cmap='gray')
 plt.show()
+
+custom_config = r'--oem 3 --psm 6'
+
+# show the output detected by tesseract
+print('TESSERACT OUTPUT --> ORIGINAL IMAGE')
+print(pytesseract.image_to_string(image, config=custom_config))
+print('TESSERACT OUTPUT --> THRESHOLDED IMAGE')
+print(pytesseract.image_to_string(image, config=custom_config))
+print('TESSERACT OUTPUT --> OPENED IMAGE')
+print(pytesseract.image_to_string(image, config=custom_config))
+print('TESSERACT OUTPUT --> CANNY EDGE IMAGE')
+print(pytesseract.image_to_string(image, config=custom_config))
