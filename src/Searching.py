@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import  preprocessing
 
 image = cv2.imread('images/sample3.jpg')
+# Replace the regex expression if you want to search for particular text
 date_pattern = "^([1-9]|0[1-9]|1[0-9]|2[0-9]|3[0-1])(\.|-|/)([1-9]|0[1-9]|1[0-2])(\.|-|/)([0-9][0-9]|19[0-9][0-9]|20[0-9][0-9])$|^([0-9][0-9]|19[0-9][0-9]|20[0-9][0-9])(\.|-|/)([1-9]|0[1-9]|1[0-2])(\.|-|/)([1-9]|0[1-9]|1[0-9]|2[0-9]|3[0-1])$"
 # Billing_pattern = '\$\d+(?:.(\d+))?'
 K = pytesseract.image_to_data(image,output_type = Output.DICT)
