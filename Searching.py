@@ -7,15 +7,15 @@ import matplotlib.pyplot as plt
 import  preprocessing
 
 image = cv2.imread('images/sample1.jpg')
-# date_pattern = '^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d\d$'
-date_pattern = '\$\d+(?:.(\d+))?'
+date_pattern = '^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d\d$'
+Billing_pattern = '\$\d+(?:.(\d+))?'
 K = pytesseract.image_to_data(image,output_type = Output.DICT)
 
 num_boxes = len(K['text'])
 
 for i in range(num_boxes):
     if int(K['conf'][i]) > 60:
-        if re.match(date_pattern, K['text'][i]):
+        if re.match(Billing_pattern, K['text'][i]):
             (x, y, w, h) = (K['left'][i], K['top'][i], K['width'][i], K['height'][i])
             image = cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
