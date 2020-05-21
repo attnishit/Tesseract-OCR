@@ -1,4 +1,5 @@
-# High-Performance-OCR
+High-Performance-OCR
+====================
 High-Performance-OCR is an optical character recognition (OCR) tool for python. That is, it will recognize and "read" the text embedded in images.
 
 Pytesseract is a wrapper for `Google's Tesseract-OCR Engine <https://github.com/tesseract-ocr/tesseract>`_.
