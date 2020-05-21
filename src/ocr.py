@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import  preprocessing
 
 # preprocessing the image
-image = cv2.imread('images/Lorem.jpg')
+image = cv2.imread('images/sample2.jpg')
 gray = preprocessing.get_grayscale(image)
 thresh = preprocessing.thresholding(gray)
 opening = preprocessing.opening(gray)
