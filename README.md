@@ -8,5 +8,7 @@ supported by the Pillow and Leptonica imaging libraries.
 
 ## Description
 -----------
-* **ocr.py** file generates and preprocess the image and produces the text as an output detected by Tesseract
-<img src = "p1.jpg">
+ocr.py file generates and preprocess the image and produces the text as an output detected by Tesseract
+<p>
+    <img src="p1.png">
+</p>
