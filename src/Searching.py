@@ -19,7 +19,7 @@ for i in range(num_boxes):
         if re.match(date_pattern, K['text'][i]):
             (x, y, w, h) = (K['left'][i], K['top'][i], K['width'][i], K['height'][i])
             image = cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
-    print(K['text'][i],K['conf'][i])
+
 b,g,r = cv2.split(image)
 rgb_img = cv2.merge([r,g,b])
 plt.figure(figsize=(16,12))
