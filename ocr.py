@@ -28,9 +28,8 @@ for i in range(rows*columns):
 plt.show()
 
 custom_config = r'--oem 3 --psm 6'
-
-# show the output detected by tesseract
-print('TESSERACT OUTPUT --> ORIGINAL IMAGE')
+# produce the output of Tesseract
+print('TESSERACT OUTPUTS --> ORIGINAL IMAGE')
 print(pytesseract.image_to_string(image, config=custom_config))
 print('TESSERACT OUTPUT --> THRESHOLDED IMAGE')
 print(pytesseract.image_to_string(image, config=custom_config))
