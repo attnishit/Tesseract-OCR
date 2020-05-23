@@ -16,12 +16,10 @@ The corresponding text produces by tesseract are:
 
 ```bash
 Univers 55 Roman
-
 Lorem ipsum dolor sit amet, magna consetetur
 sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore in magna
 aliquyam erat, sed diam voluptua. At vero
-
 eos et accusam et justo duo dolores et ea rebus.
 Stet clita kasd gubergren, no sea takimata
 sanctus est Lorem ipsum dolor sit amet. Lorem
