@@ -50,6 +50,6 @@ voluptua.
 * Run **bounding_box.py** for drawing bounding box around the text recognized by tesseract
 * Run **Searching.py** for searching and drawing around the required text or expression by chossing suitable Regex
 
-### Checkout [this link](https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/) to learn more Tesseract and OCR!!
+### Checkout [this link](https://www.pyimagesearch.com/2017/07/10/using-tesseract-ocr-python/) to learn more about Tesseract and OCR!!
 
 
