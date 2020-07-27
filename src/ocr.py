@@ -18,12 +18,11 @@ def main(file):
 
     # Plot images after preprocessing
 
-    plt.imshow(gray)
-    plt.show()
+    # plt.imshow(gray)
+    # plt.show()
 
     custom_config = r'--oem 3 --psm 6'
     # produce the output of Tesseract
-    print('TESSERACT OUTPUTS --> ')
     print(pytesseract.image_to_string(image, config=custom_config))
 
 
