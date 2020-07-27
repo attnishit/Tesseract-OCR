@@ -6,6 +6,18 @@ Pytesseract is a wrapper for [Google's Tesseract-OCR Engine](https://github.com/
 It is also useful as a stand-alone invocation script to tesseract, as it can read all image types
 supported by the Pillow and Leptonica imaging libraries.
 
+# Manual
+    usage: ocr.py [-h] [-v] [-s SEARCH] file
+
+    positional arguments:
+    file                  path to image file you want to extract text from
+
+    optional arguments:
+    -h, --help            show this help message and exit
+    -v, --view            Shows the boundaries around the text
+    -s SEARCH, --search SEARCH
+                            Search for the paticular Regular Expression in Image.
+
 ## Description
 -----------
 * **ocr.py**  generates and preprocess the image and produces the text as an output detected by Tesseract
